@@ -11,4 +11,4 @@ int main(int argc, char* argu[]){
 	}
 	printf("%.2f\n",z);
 	return 0;
-}
+} 
