@@ -1,15 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void burbuja(int *item, int cont) {
+void burbuja(int *item, int cont){
     int i, j, ordenado ;
     int temp;
 //correr una lista
-    for (i = 1; i < cont; i++) {
+    for (i = 1; i < cont; i++){
 //Hace la funcion de apuntadores uno apunta el numero y otro ve el numero si es mayor o menor  
-        for (j = cont; j > i; j--) {
+        for (j = cont; j > i; j--){
             ordenado = 1;
-            if (item[j-1] > item[j]) {
+            if (item[j-1] > item[j]){
                 temp = item[j-1];
                 item[j-1] = item[j];
                 item[j] = temp;
@@ -17,11 +17,11 @@ void burbuja(int *item, int cont) {
             }
         }
         //la lista de este ordenado ya no es necesario seguir recorriendo el arreglo para hacer comparaciones
-        if (ordenado == 0)
+        if (ordenado == 0);
         break;
     }
 }
-int main(int argc, char*argv[]) {
+int main(int argc, char*argv[]){
     //tamaño del arreglo
     int arreglo[argc];
     for (int i = 1; i < argc; i++){
@@ -31,7 +31,7 @@ int main(int argc, char*argv[]) {
 }
 burbuja(arreglo, argc-1);
     //mostramos el arreglo
-     for (int i = 1; i < argc; i++)
-        printf("%d  ", arreglo[i]);
+     for (int i = 1; i < argc; i++){
+	 printf("%d  ", arreglo[i]);}
 
 } 
